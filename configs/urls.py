@@ -16,18 +16,7 @@ Including another URLconf
 """
 
 from django.urls import path
-from first.views import FirstView, SecondView
-from users.views import UserListCreateView, UserRetrieveUpdateDestroyView
 
 urlpatterns = [
 
-    path("first", FirstView.as_view()),
-
-    path("second/<int:age>/<str:name>/<slug:asd>", SecondView.as_view()),
-
-    path("users", UserListCreateView.as_view()),
-
-    path("users", UserListCreateView.as_view()),
-
-    path("users/<int:pk>", UserRetrieveUpdateDestroyView.as_view()),
 ]
