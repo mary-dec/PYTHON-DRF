@@ -39,6 +39,7 @@ INSTALLED_APPS = [
 
 
     # my_apps
+    'apps.pizza',
 ]
 
 MIDDLEWARE = [

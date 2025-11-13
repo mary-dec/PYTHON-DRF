@@ -16,7 +16,8 @@ Including another URLconf
 """
 
 from django.urls import path
+from apps.pizza.views import PizzaListCreateView
 
 urlpatterns = [
-
+    path("pizzas", PizzaListCreateView.as_view()),
 ]
